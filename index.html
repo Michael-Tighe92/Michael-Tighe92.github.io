@@ -1,1 +1,93 @@
-Hello my name is Mike.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michael Tighe's Website</title>
+</head>
+<body>
+  <style>
+  </style>
+
+  <div align="center">
+  <p>Hello my name is Mike.</p>
+  </div>
+
+  <hr/>
+
+  <div class="Example">
+  <h2>Testing the waters</h2>
+  <h2>Calm as ocean waves!</h2>
+  </div>
+
+  <p>Testing buttons... </p>
+  <h4> This button will make the first two line's background red!!! </h4>
+  <button onclick = "changeBGColor()"> Push the button! </button>
+  <h4> This button will make the first two line's font blue!!!</h4>
+  <button onclick = "changeFColor()"> Push the button! </button>
+  <br />
+  <p>testing javascript below...</p>
+  <br />
+
+  <script>
+
+  //My variables
+  var x = 20;
+  var y = 15;
+
+  //My objects
+  var obj = {
+    a:"Hello World",
+    b:250,
+    c:true
+  };
+
+  var Myself = {
+    name:"Mike"
+  };
+
+  //creating an array
+  var arr = [
+    "Hello World",
+    250,
+    true
+  ];
+
+  //function definitons
+  function add(){
+    var z=x+y;
+    document.write(z + "<br />");
+  };
+
+  function printArr(e){
+    document.write(e[0] + "<br />");
+    document.write(e[1]+ "<br />");
+    document.write(e[2] + "<br />");
+  };
+
+  function identify(){
+    return this.name.toUpperCase();
+  }
+
+  function speak(){
+    var output = "Hello my name is: " + identify.call(this);
+    console.log(output);
+  }
+
+  function changeBGColor(){
+    document.querySelector(".Example").style.backgroundColor = "red";
+  }
+
+  function changeFColor(){
+    document.querySelector(".Example").style.color = "blue";
+  }
+
+  //function calls
+  add();
+  printArr(arr)
+
+  //identify.call(Myself);
+  speak.call(Myself);
+
+  </script>
+</body>
+</html>
