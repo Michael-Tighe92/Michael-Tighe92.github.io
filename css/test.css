@@ -1,0 +1,27 @@
+body{
+  background: pink;
+  min-height: 200vh;
+}
+
+.logo {
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.parallax-container {
+  height: 500px;
+}
+
+.thin-text{
+  font-weight: 300;
+  background: rgba(96,125,139, .4);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.test{
+  align: "center";
+  border: 5px solid black;
+  padding: 25px;
+  margin: 25px;
+}
